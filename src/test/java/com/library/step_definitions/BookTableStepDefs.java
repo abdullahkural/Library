@@ -48,10 +48,8 @@ public class BookTableStepDefs {
         Assert.assertEquals("did not match ISBN",expectedISBN,actualISBN);
         Assert.assertEquals("did not match Description",expectedDesc,actualDesc);
 
-        //real life you dont save those info into variables
+        //in real life you don't save those infos into variables
         Assert.assertEquals(booksPage.bookName.getAttribute("value"),dbData.get("name").toString());
-
-
 
     }
 
